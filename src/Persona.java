@@ -12,6 +12,16 @@ public class Persona
 		this.edad = edad;
 	}
 
+	
+	
+	@Override
+	public String toString()
+	{
+		return "Nombre=" + name + "\nCiudad=" + city + "\nEdad=" + edad;
+	}
+
+
+
 	public String getName() {
 		return name;
 	}

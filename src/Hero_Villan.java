@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Hero_Villan 
 {
@@ -5,15 +6,27 @@ public class Hero_Villan
 		private String fakeName, franquicia;
 		private String powers[];	
 		
+		
+		
 		public Hero_Villan(String fakeName, String franquicia, String[] powers) {
 			super();
 			this.fakeName = fakeName;
 			this.franquicia = franquicia;
 			this.powers = powers;
-
 		}
 
-		public String getFakeName() {
+
+
+
+		@Override
+		public String toString() {
+			return "Nombre de Pila=" + fakeName + "\\nFranquicia=" + franquicia;
+		}
+
+
+
+		public String getFakeName() 
+		{
 			return fakeName;
 		}
 
@@ -39,3 +52,4 @@ public class Hero_Villan
 
 		
 }
+
